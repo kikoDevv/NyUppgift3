@@ -1,0 +1,61 @@
+/* Sätter en transition-effekt för att göra förändringar i body mjuka */
+body {
+    transition: 0.3s linear; /* Ändringar sker över 0,3 sekunder */
+    background-image: linear-gradient(100deg, #d4f1ff, #ffffff); /* Bakgrundsfärg med gradient från ljusblå till vit */
+}
+
+/* Ställer in en flexbox-container för texten och knapparna */
+.textBox {
+    display: flex; /* Använder flexbox för layout */
+    justify-content: center; /* Centrerar innehållet horisontellt */
+    align-items: center; /* Centrerar innehållet vertikalt */
+    margin-top: 250px; /* Lägger till avstånd från toppen av sidan */
+    cursor: default; /* Ändrar muspekaren till standard på textBox */
+}
+
+/* Stilar för text-elementet (h1) */
+.text {
+    background-color: #bfc3c9; /* Grå bakgrundsfärg */
+    padding: 15px; /* Utrymme runt texten */
+    border-bottom-left-radius: 20px; /* Rundade hörn på nedre vänstra sidan */
+    border-top-left-radius: 20px; /* Rundade hörn på övre vänstra sidan */
+    padding-right: 150px; /* Extra utrymme till höger om texten */
+}
+
+/* Stilar för knappen som ändrar text */
+.button {
+    transition: box-shadow 200ms ease, background-color 200ms ease-in-out; /* Ändring i skugga och bakgrundsfärg vid hover */
+    background-color: #a6b0bd; /* Ljusgrå bakgrundsfärg */
+    color: rgb(11, 11, 11); /* Svart textfärg */
+    padding: 16px; /* Utrymme runt texten i knappen */
+    border: none; /* Ingen ram runt knappen */
+    font-size: 30px; /* Stor textstorlek */
+    border-top-right-radius: 20px; /* Rundade hörn på övre högra sidan */
+    cursor: pointer; /* Muspekaren ändras till pekaren när man hovrar över knappen */
+}
+
+/* Ändrar knappens stil när musen hålls över */
+.button:hover {
+    cursor: pointer; /* Pekande muspekare vid hover */
+    background-color: #62676c; /* Ändrar bakgrundsfärgen till mörkare grå vid hover */
+    color: rgb(254, 254, 254); /* Ändrar textfärgen till vit vid hover */
+}
+
+/* Stilar för den dynamiskt skapade "Reset"-knappen */
+#resetBtn {
+    background-color: #62676c; /* Mörkare grå bakgrundsfärg */
+    padding-top: 21px; /* Utrymme ovanför texten i knappen */
+    padding-bottom: 21px; /* Utrymme under texten i knappen */
+    border: none; /* Ingen ram */
+    margin-left: 20px; /* Utrymme till vänster om knappen */
+    border-radius: 100px; /* Rundar knappen helt för en cirkulär form */
+    font-size: 24px; /* Textstorlek i knappen */
+    color: white; /* Vit textfärg */
+}
+
+/* Ändrar "Reset"-knappens stil när musen hålls över */
+#resetBtn:hover {
+    cursor: pointer; /* Pekande muspekare vid hover */
+    background-color: #ff0000; /* Ändrar bakgrundsfärgen till röd vid hover */
+    color: rgb(255, 253, 253); /* Ändrar textfärgen till nästan vit vid hover */
+}
